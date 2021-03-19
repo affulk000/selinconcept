@@ -1,8 +1,8 @@
 import s from './Navbar.module.css';
 
-import React from 'react'
+import React, { FC } from 'react'
 
-function Navbar() {
+const Navbar: FC = () => {
     return (
         <div className={s.Header}>
             <nav className={s.navbar}>

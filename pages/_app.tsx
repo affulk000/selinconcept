@@ -1,9 +1,11 @@
+import { AppProps } from 'next/dist/next-server/lib/router/router'
 import 'tailwindcss/tailwind.css'
+import { FC } from "react";
 
-const Noop = ({ children }) => <>{children}</>
+const Noop: FC = ({ children }) => <>{children}</>
 
-function MyApp({ Component, pageProps }) {
-  const Layout = (Component).Layout || Noop
+function MyApp({ Component, pageProps }: AppProps) {
+  const Layout = (Component as any).Layout || Noop
 
   return (
     <>
@@ -12,7 +14,7 @@ function MyApp({ Component, pageProps }) {
       </Layout>
     </>
   )
-  
+
 }
 
 export default MyApp
