@@ -1,6 +1,5 @@
 .Header{
-    height: 4rem;
-    width: 100%;
+    @apply flex;
 }
 
 .navbar{

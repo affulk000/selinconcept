@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function logo() {
+const logo: FC = () => {
   return (
         <svg
         xmlns:dc="http://purl.org/dc/elements/1.1/"
