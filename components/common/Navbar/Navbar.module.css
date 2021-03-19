@@ -1,0 +1,18 @@
+.Header{
+    height: 4rem;
+    width: 100%;
+}
+
+.navbar{
+    contain: content;
+    flex: content;
+    flex-direction: initial;
+    height: 2.5rem;
+    width: fit-content;
+    backgroung: white;
+}
+
+.navlink{
+    display: flex;
+    flex-direction: initial;
+}
