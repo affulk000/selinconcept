@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Layout from '../components/common/Layout/Layout'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -63,3 +64,5 @@ export default function Home() {
     </div>
   )
 }
+
+Home.Layout = Layout
